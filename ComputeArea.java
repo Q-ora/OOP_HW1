@@ -13,11 +13,9 @@ public class ComputeArea{
         FileWriter fout = new FileWriter("java_result.txt");
 
         while(true){
-            System.out.println("Please input first number:");
+            System.out.println("Please input the lengths of the three sides of the triangle:");
             a = scanner.nextFloat();
-            System.out.println("Please input second number:");
             b = scanner.nextFloat();
-            System.out.println("Please input third number:");
             c = scanner.nextFloat();
             //三邊都是-1代表結束
             if(a==-1 && b==-1 && c==-1)

@@ -16,12 +16,8 @@ int main()
     fout.open("cpp_result.txt");    //預設寫入模式
 
     while(++questionCnt){
-        cout << "Please Input first number:" << endl;
-        cin >> a;
-        cout << "Please Input second number:" << endl;
-        cin >> b;
-        cout << "Please Input third number:" <<endl;
-        cin >> c;
+        cout << "Please input the lengths of the three sides of the triangle:" << endl;
+        cin >> a >> b >> c;
         //輸入全為-1則中斷
         if(a==-1 && b==-1 && c==-1)
             break;

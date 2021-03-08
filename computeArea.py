@@ -5,9 +5,10 @@ fout = open("python_result.txt", "w")
 
 questionCnt = 1
 while True:
-    a = float(input("Please input first number:\n"))
-    b = float(input("Please input second number:\n"))
-    c = float(input("Please input third number:\n"))
+    a, b, c = input("Please input the lengths of the three sides of the triangle:\n").split()
+    a = int(a)
+    b = int(b)
+    c = int(c)
     #輸入皆為-1
     if a==-1 and b==-1 and c==-1:
         break

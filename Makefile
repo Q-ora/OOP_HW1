@@ -6,5 +6,6 @@ computeArea: computeArea.o
 computeArea.o: computeArea.cpp
 	g++ -c computeArea.cpp
 
-clean: computeArea
+clean: computeArea.o computeArea
 	rm -f computeArea.o computeArea
+

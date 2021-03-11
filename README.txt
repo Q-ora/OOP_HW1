@@ -4,7 +4,7 @@ email: steven900412@gmail.com
 完成項目:
     1. 輸入以空白分開的三個邊長
     2. 檢查不合法的邊長
-    3. 輸出答案到console視窗
+    3. 輸出答案到console視窗 (四捨五入到小數點後第4位)
     4. 給.cpp檔用的makefile(有make clean)
 Bonus:
-    1. 輸出答案到.txt檔裡面
+    1. 輸出答案到.txt檔裡面 (四捨五入到小數點後第4位)

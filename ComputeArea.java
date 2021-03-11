@@ -1,9 +1,11 @@
 import java.io.*;
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class ComputeArea{
     public static void main(String[] args) throws IOException{  //拋出因檔案的開啟和寫入 可能的異常IOException
         Scanner scanner = new Scanner(System.in);
+        DecimalFormat df = new DecimalFormat("#.0000"); //到小數點後第4位
         float a = 0, b = 0, c = 0;
         float s = 0;
         double area = 0;
@@ -36,6 +38,7 @@ public class ComputeArea{
             //compute area
             s = (a + b + c) / 2;
             area = Math.sqrt( (double)(s*(s-a)*(s-b)*(s-c)) );
+            area = Double.valueOf(df.format(area)); //四捨五入到小數點後第4位
             fout.write("The Area of this triangle is " + area + "\n");
             System.out.println("The Area of this triangle is " + area);
             System.out.println("The answer has been output to java_result.txt");

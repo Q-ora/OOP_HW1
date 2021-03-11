@@ -25,8 +25,8 @@ while True:
     #compute area
     s = (a + b + c) / 2
     area = math.sqrt( s*(s-a)*(s-b)*(s-c) )
-    fout.write("The Area of this triangle is {0}.".format(area) + "\n")
-    print("The Area of this triangle is {0}.".format(area))
+    fout.write("The Area of this triangle is {0}.".format(round(area,4)) + "\n")
+    print("The Area of this triangle is {0}.".format(round(area,4)))
     print("The answer has been output to python_result.txt")
 
     questionCnt += 1

@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cmath>    //sqrt()
 #include <fstream>  //ofstream
+#include <iomanip>  //setprecision
 
 using namespace std;
 
@@ -37,8 +38,8 @@ int main()
         //compute area
         s = (a + b + c) / 2;
         area = sqrt( (double)(s*(s-a)*(s-b)*(s-c)) );
-        fout << "The Area of this triangle is " << area << "." <<endl;
-        cout << "The Area of this triangle is " << area << "." <<endl;
+        fout << "The Area of this triangle is " << fixed << setprecision(4) << area << "." <<endl;
+        cout << "The Area of this triangle is " << fixed << setprecision(4) << area << "." <<endl;
         cout << "The answer has been output to cpp_result.txt" << endl;
     }
 
